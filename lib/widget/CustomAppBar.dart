@@ -63,7 +63,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
                   ),
                   SizedBox(height: 16),
                   Text(
-                    '$days Days left until ${dateFormatter.format(DateTime.now())}',
+                    '$days Days left until ${dateFormatter.format(profile1.dataOfRegistration)}',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 12,
