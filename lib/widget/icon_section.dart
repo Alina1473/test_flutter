@@ -5,7 +5,12 @@ class IconSection extends StatelessWidget {
   final String label;
   final int notification;
 
-  IconSection(this.pathToIcon, this.label, this.notification);
+  const IconSection(
+      {Key key,
+      @required this.pathToIcon,
+      @required this.label,
+      @required this.notification})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:test_flutter/model/Profile.dart';
+import 'package:test_flutter/model/profile.dart';
 
 class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   final Profile profile1 = Profile("Shitzu Photographers",
