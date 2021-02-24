@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:test_flutter/data/event_data.dart';
 import 'package:test_flutter/widget/custom_app_bar.dart';
+import 'package:test_flutter/widget/event_card.dart';
 import 'package:test_flutter/widget/icon_section.dart';
 
 class MyHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    EventData eventData = EventData();
     return Scaffold(
       appBar: CustomAppBar(),
       body: Column(
@@ -43,6 +46,17 @@ class MyHomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          Expanded(
+              child: ListView.builder(
+                physics: BouncingScrollPhysics(),
+                itemCount: eventData.activeEvents.length,
+                itemBuilder: (context, index){
+                 return EventCard(
+                   activeEvents: [index],
+                 );
+                },
+              ),
           )
         ],
       ),

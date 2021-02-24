@@ -9,5 +9,4 @@ class Profile{
     int days = DateTime.now().difference(dataOfRegistration).inDays;
     return days;
   }
-
 }
