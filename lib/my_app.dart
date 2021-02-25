@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_flutter/screen/my_home_screen.dart';
+import 'package:test_flutter/screen/home_screen.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.purple[700],
         brightness: Brightness.light,
       ),
-      home: MyHomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
